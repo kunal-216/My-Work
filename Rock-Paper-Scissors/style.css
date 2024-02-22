@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rps-header{
+    height: 70px;
+    width: 100vw;
+    background-color: #252349;
+    color: rgb(174, 232, 237);
+}
+
+#header{
+    height: 70px;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons-div{
+    height: 200px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+img:hover{
+    opacity: 0.75;
+}
+
+.border-div{
+    border: 2px solid transparent;
+}
+
+.border-div:hover{
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+#score-div{
+    height: 130px;
+    width: 200px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10px;
+}
+
+#you-score{
+    height: 50px;
+    width: 50px;
+    margin-right: 25px;
+    position: relative;
+    right: 6px;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#you-div{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+#comp-score{
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+    position: relative;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#comp-div{
+    font-size: 20px;
+    margin-left: 13px;
+}
+
+#result-div{
+    position: relative;
+    top: 30px;
+    left: 5px;
+    background-color:#3aafc6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-left: 11px;
+    font-size: 30px;
+    color:#FCF6F5;
+}
