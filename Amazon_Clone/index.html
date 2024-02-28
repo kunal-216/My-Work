@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Amazon_icon.svg.webp" type="image/x-icon" height="100px">
+    <!-- This link is for icons and this is a library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <!-- This nav-logo-border is made because as we can see that on hovering on every div in the navbar we can see a transparent white thing and to make that we are doing this so -->
+            <div class="nav-logo">
+                <!-- rather than adding the image here we can use the background image thing so that it fits well within the nav-bar -->
+                <div id="logo" class="border"></div>
+            </div>
+
+            <div id="nav-logo-india" class="border">
+                <p class="add-first">Deliver to</p>
+                <div id="nav-location-icon">
+                    <i id="loc-icon" class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+
+            <div id="nav-search-bar" class="border">
+                <select id="dropdown-box-nav">
+                    <option value="">All</option>
+                </select>
+                <div>
+                    <input type="text" name="Search Bar" id="search-bar" placeholder="Search Amazon">
+                </div>
+                <div id="nav-search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div id="nav-tools">
+                <div id="nav-lang-dropdown" class="border">
+                    <div id="lang-flag">
+                        <img src="flag-usa.webp" alt="Flag of USA" id="flag-usa">
+                    </div>
+                    <select id="lang-dropdown">
+                        <option value="">EN</option>
+                    </select>
+                </div>
+                <div  id="nav-account-dropdown" class="border">
+                    <p id="hello">Hello, sign in</p>
+                    <select id="account-dropdown">
+                        <option value="">Accounts & Lists</option>
+                    </select>
+                </div>
+                <div id="nav-return-orders" class="border">
+                    <div id="return-orders">
+                        <p id="return">Returns</p>
+                        <p id="orders">& Orders</p>
+                    </div>
+                </div>
+                <div id="nav-cart" class="border">
+                    <div id="cart-logo">
+                        <p>0</p>
+                        <div id="nav-cart-logo">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <div id="nav-cart-text">
+                        <p id="cart-text">Cart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="panel"">
+            <div id="panel-all" class="panel-border">
+                <i id="bars" class="fa-solid fa-bars"></i>
+                <p id="All">All</p>
+            </div>
+            <div id="panel-contents">
+                <div id="todays-deals-div" class="panel-border">
+                    <p id="todays-deals">Today's Deals</p>
+                </div>
+                <div id="customer-service-div" class="panel-border">
+                    <p id="customer-service">Customer Service</p>
+                </div>
+                <div id="registry-div" class="panel-border">   
+                    <p id="registry">Registry</p>
+                </div>
+                <div id="gift-cards-div" class="panel-border"> 
+                    <p id="gift-cards">Gift Cards</p>    
+                </div>
+                <div id="sell-div" class="panel-border">
+                    <p id="sell">Sell</p>   
+                </div>
+
+            </div>
+            <div id="panel-none"></div>
+            <div id="panel-shop-div" class="panel-border">
+                <p id="Shops-deals">Shops deals in Electronics</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero section is a section where the main product or service is showcased. -->
+    <div id="hero-section">
+        <div id="hero-msg">
+            <pre>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://amazon.in">Click here to go to amazon.in</a></pre>
+        </div>
+    </div>
+
+    <div id="shop-section">
+        <div class="box">
+            <div class="caption-div">
+                <p>Lunar New Year</p>
+            </div>
+            <div id="lunar-image"></div>
+            <div class="shop-div-eight">
+                <a href="">Shop Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="caption-div">
+                <p>New Year, new supplies</p>
+            </div>
+            <div id="stationary-image"></div>
+            <div class="shop-div-eight">
+                <a href="">Shop offline products</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="caption-div">
+                <p>Deals in PCs</p>
+            </div>
+            <div id="stereo-image"></div>
+            <div class="shop-div-eight">
+                <a href="">Shop Now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="caption-div">
+                <p>Toys under $25</p>
+            </div>
+            <div id="teddy-image"></div>
+            <div class="shop-div-eight">
+                <a href="">See all deals</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="caption-div">
+                <p>A whole new way to work</p>
+            </div>
+            <div id="computers-image"></div>
+            <div class="shop-div-eight">
+                <a href="">Shop Personal Computers</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="caption-div">
+                <p>Creating bussiness solutions</p>
+            </div>
+            <div id="bussiness-image"></div>
+            <div class="shop-div-eight">
+                <a href="">See more software products</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="caption-div">
+                <p>Laptops for every need</p>
+            </div>
+            <div id="laptops-image"></div>
+            <div class="shop-div-eight">
+                <a href="">Find your laptop here</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="caption-div">
+                <p>Personal care under $25</p>
+            </div>
+            <div id="personal-image"></div>
+            <div class="shop-div-eight">
+                <a href="">See more</a>
+            </div>
+        </div>
+    </div>
+
+    <footer id="amazon-footer">
+        <div id="back-div">
+            <p id="back-to-top">Back to top</p>
+        </div>
+        <div id="links-div">
+            <div id="get-to-know-div">
+                <p>Get to Know Us</p>
+                <div class="a-tags">
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                    <a href="#">About Amazon</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Amazon Devices</a>
+                    <a href="#">Amazon Science</a>
+                </div>
+            </div>
+            <div class="free-space-div"></div>
+            <div id="make-money-div">
+                <p>Make money with Us</p>
+                <div class="a-tags"> 
+                    <a href="#">Sell products on Amazon</a>
+                    <a href="#">Sell on Amazon bussiness</a>
+                    <a href="#">Sell apps on Amazon</a>
+                    <a href="#">Become an affiliate</a>
+                    <a href="#">Advertise your Products</a>
+                    <a href="#">Self-Publish with Us</a>
+                    <a href="#">Host an Amazon Hub</a>
+                    <a href="#">See More Make Money with Us</a>
+                </div>
+            </div>
+            <div class="free-space-div"></div>
+            <div id="amazon-payment">
+                <p>Amazon Payment Products</p>
+                <div class="a-tags">
+                    <a href="#">Amazon Bussiness Card</a>
+                    <a href="#">Shop with Points</a>
+                    <a href="#">Reload your Balance</a>
+                    <a href="#">Amazon Currency Converter</a>
+                </div>
+            </div>
+            <div class="free-space-div"></div>
+            <div id="let-us-div">
+                <p>Let Us Help you</p>
+                <div class="a-tags">
+                    <a href="#">Amazon and COVID-19</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">Your Orders</a>
+                    <a href="#">Shipping Rates & Policies</a>
+                    <a href="#">Returns & Replacements</a>
+                    <a href="#">Manage Your Content and Devices</a>
+                    <a href="#">Amazon Assistant</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+        </div>
+        <div id="ama-div">
+            <div id="three-blocks">
+                <div id="box1" class="footer-border">
+                    <div id="world-logo"><i class="fa-solid fa-globe"></i></div>
+                    <div id="lang-drop">
+                        <select name="dropdown" id="lang-eng">
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Spanish">Spanish</option>
+                        </select>
+                    </div> 
+                </div>
+                <div id="box2" class="footer-border">
+                    <div id="dollar-logo">$</div>
+                    <div style="color: #cccccc; font-size: 13px;">USD - U.S. Dollar</div>
+                </div>
+                <div id="box3" class="footer-border">
+                    <div id="usa-flag"></div>
+                    <div style="color: #cccccc; font-size: 13px;">United States</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

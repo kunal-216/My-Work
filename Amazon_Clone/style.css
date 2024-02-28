@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* This means that the border will not be outside the box and expand the dimensions of the box rather it will be taken in account inside of the box and is like the padding */
+    border: box-border;
+}
+
+#navbar{
+    background-color: #0f1111;
+    height: 60px;
+    width: 100vw;
+    color: white;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    height: 50px;
+    width: 120px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    background-image: url("WhatsApp\ Image\ 2024-02-15\ at\ 01.20.29.jpeg");
+    background-size:cover;
+    height: 50px;
+    width: 100%;
+    margin: 1px;
+}
+
+#nav-logo-india{
+    height: 50px;
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nav-location-icon{
+    padding: 2px;
+    display: flex;
+}
+
+#loc-icon{
+    padding-left:4px ;
+    font-size: 20px;
+}
+
+.add-first{
+    padding: 2px;
+    color: #CCCCCC;
+    font-size: 12px;
+    margin-left: 23px;
+}
+
+.add-second{
+    padding: 2px;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-left: 2px;
+    font-weight: 700;
+}
+
+#nav-search-bar{
+    height: 57px;
+    width: 940px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#dropdown-box-nav{
+    height: 40px;
+    width: 48px;
+    background-color: #CCCCCC;
+    padding-left: 7px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#dropdown-box{
+    font-size: 14px;
+}
+
+#search-bar{
+    height: 37.4px;
+    width: 810px;
+    font-size: 16px;
+    padding-left: 7px;
+}
+
+#nav-search-icon{
+    height: 40px;
+    width: 45px;
+    background-color: rgb(227, 161, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-size: 20px;
+    color: #0f1111;
+}
+
+#nav-tools{
+    height: 58px;
+    width: 395px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-lang-dropdown{
+    height: 50px;
+    width: 88px;
+    margin-left: 1px;
+    margin-right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flag-usa{
+    height: 20px;
+    width: 25px;
+}
+
+#lang-dropdown{
+    background-color: #0f1111;
+    color: #FFFFFF;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#nav-account-dropdown{
+    height: 50px;
+    width: 123px;
+    margin-left: 1px;
+    margin-right: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#hello{
+    font-size: 12px;
+    padding-left: 4px;
+}
+
+#account-dropdown{
+    background-color: #0f1111;
+    color: white;
+    font-size: 14px;
+    border: none;
+    margin-right: 1px;
+    font-weight: 700;
+}
+
+#nav-return-orders{
+    height: 50px;
+    width: 88px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+#return-orders{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#return{
+    padding-right: 12px;
+    font-size: 12px;
+}
+
+#orders{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#nav-cart{
+    height: 50px;
+    width: 88px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 2px;
+    display: flex;
+}
+
+#cart-logo{
+    height: 50px;
+    width: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+}
+
+#nav-cart-logo{
+    font-size: 25px;
+}
+
+#nav-cart-text{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+
+#cart-text{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor:  pointer;
+}
+
+#panel{
+    height: 39px;
+    width: 100vw;
+    background-color: #222f3d;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#panel-contents{
+    width: 430px;
+    font-size: 14px;
+    display: flex;
+}
+
+#panel-none{
+    width: 830px;
+}
+
+#panel-all{
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    height: 39px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#bars{
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+#panel-shop{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.panel-border{
+    border: 2px solid transparent ;
+}
+
+.panel-border:hover{
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor:  pointer;
+}
+
+#todays-deals-div{
+    height: 39px;
+    width: 170px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#customer-service-div{
+    height: 39px;
+    width: 200px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#registry-div{
+    height: 39px;
+    width: 120px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gift-cards-div{
+    height: 39px;
+    width: 110px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sell-div{
+    height: 39px;
+    width: 100px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#panel-shop-div{
+    height: 39px;
+    width: 200px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-section{
+    background-image: url("71nwqPZaNRL._SX3000_.jpg");
+    background-size: cover;
+    height: 320px;
+    width: 100vw;
+}
+
+#hero-msg{
+    height: 40px;
+    width: 96%;
+    background-color: #f5f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 2%;
+    top: 250px;
+    font-size: 14px;
+}
+
+#hero-msg a{
+    color: #007185;
+}
+
+#shop-section{
+    width: 100vw;
+    background-color: #f8e3f8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box{
+    height: 420px;
+    width: 365px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.caption-div{
+    font-size: 21px;
+    font-weight: 600;
+    color: #0f1111;
+    height: 27.3px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+#lunar-image{
+    height: 340px;
+    width: 320px;
+    background-image: url("lunar.jpg");
+    background-size: cover;
+}
+
+#stationary-image{
+    height: 340px;
+    width: 320px;
+    background-image: url("XCM_CUTTLE_1555947_2997386_379x304_1X_en_US._SY304_CB594429819_.jpg");
+    background-size: cover;
+}
+
+#stereo-image{
+    height: 340px;
+    width: 320px;
+    background-image: url("Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg");
+    background-size: auto;
+}
+
+#teddy-image{
+    height: 340px;
+    width: 320px;
+    background-image: url("Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg");
+}
+
+#computers-image{
+    height: 340px;
+    width: 320px;
+    background-image: url("computers.jpg");
+    background-size: auto;
+}
+
+#bussiness-image{
+    height: 340px;
+    width: 320px;
+    background-image: url("bussiness.jpg");
+    background-size: cover;
+}
+
+#laptops-image{
+    height: 340px;
+    width: 320px;
+    background-image: url("laptops.jpg");
+    background-size: cover;
+}
+
+#personal-image{
+    height: 340px;
+    width: 320px;
+    background-image: url("personal.jpg");
+    background-size: cover;
+}
+
+.shop-div-eight{
+    height: 16.9px;
+    width: 320px;
+    margin-top: 4px;
+    padding-top: 2px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#shop-section a{
+    color:#007185;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#amazon-footer{
+    height: 540px;
+    width: 100vw;
+    background-color: #222f3d;
+}
+
+#back-div{
+    height: 49px;
+    width: 100vw;
+    background-color: #37475a;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+#back-to-top{
+    font-size: 13px;
+}
+
+#links-div{
+    height: 385px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-tags{
+    display: flex;
+    flex-direction: column;
+}
+
+#get-to-know-div{
+    height: 318.4px;
+    width: 136.05px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#make-money-div{
+    height: 318.4px;
+    width: 184.33px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#amazon-payment{
+    height: 318.4px;
+    width: 222.21px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#let-us-div{
+    height: 318.4px;
+    width: 157.41px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.free-space-div{
+    height: 318.4px;
+    width: 100px;
+}
+
+#amazon-footer  a{
+    font-size: 14px;
+    color: #CCCCCC;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#links-div  p{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 6px 0px 14px;
+}
+
+#ama-div{
+    height: 106px;
+    width: 100vw;
+    border-top: 1px grey solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#three-blocks{
+    height: 34.6px;
+    width: 460px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-border{
+    height: 100%;
+    width: 141px;
+    border: 0.5px grey solid;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lang-eng{
+    background-color: #222f3d;
+    border: none;
+    color: #cccccc;
+    font-size: 13px;
+}
+
+#world-logo{
+    color: #FFFFFF;
+    margin-right: 8px;
+}
+
+#dollar-logo{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+#usa-flag{
+    height: 15px;
+    width: 23px;
+    margin-right: 9px;
+    background-image: url("flag-usa.webp");
+    background-size: cover;
+}
