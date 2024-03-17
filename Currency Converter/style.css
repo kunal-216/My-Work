@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Isse saari cheeze center mein aajaengi */
+    background-color: #dbf4bb;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: azure;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 50vh;
+    min-height: 55vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.amount{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    margin: 1.5rem 0;
+}
+
+form select, button, input{
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 0.75rem;
+    outline: none;
+}
+
+h1{
+    text-align: center;
+}
+
+form input{
+    width: 95%;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+form h3{
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0 53px 0 53px ;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+}
+
+.Converter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+i{
+    font-size: 30px;
+}
+
+img{
+    height: 80px;
+    width: 80px;
+}
+
+form select{
+    height: 25px;
+    padding-left: 5px;
+    margin-top: 6px;
+}
+
+.msg{
+    height: 30px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+button{
+    position: relative;
+    left: 65px;
+    justify-content: center;
+    height: 35px;
+    width: 60%;
+    font-size: 17px;
+    background-color: #9bcfe0;
+    color: black;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #9bcfe0;
+    opacity: 0.75;
+    border: 1px solid black;
+}
+
+form input:hover,select:hover{
+    background-color: rgb(253, 253, 253);
+    opacity: 0.75;
+}
