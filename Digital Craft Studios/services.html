@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image folder/icon.avif" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark"">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="image folder/icon.avif" alt="Dc logo" height="30px"
+                    width="60px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="more.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="team.html">Team</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success " type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn-danger btn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn-danger btn" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">SignUp</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputDOB1" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" id="exampleInputDOB1" aria-describedby="DOBHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <h1 class="py-4">Our Services</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-5">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="image folder/service-1.jpg" alt="About-1" class="img-fluid" height="400px" width="400px">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h3 class="card-title">Production</h3>
+                                    <p class="card-text">DigitalCraft Studios offers a diverse range of production services to elevate digital experiences. From high-quality video production and captivating animations to creative graphic design and professional photography, we bring ideas to life with precision and creativity. Our expertise extends to audio production and 3D modeling too.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-5">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="image folder/service-2.jpg" alt="About-1" class="img-fluid" height="400px" width="400px">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h3 class="card-title">Web Design & Development</h3>
+                                    <p class="card-text">Transform your digital presence with custom-designed websites that are not only visually stunning but also user-friendly and optimized for performance across devices. Our experienced team of designers and developers ensures pixel-perfect designs, intuitive navigation, and seamless functionality.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-5">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="image folder/service-3.png" alt="About-1" class="img-fluid" height="700px" width="400px">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h3 class="card-title">Mobile App Development</h3>
+                                    <p class="card-text">Bring your ideas to life with engaging and intuitive mobile applications tailored to your specific requirements and target audience. From concept to launch, we leverage the latest technologies and industry best practices to develop scalable, feature-rich apps that captivate users and drive engagement.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-5">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="image folder/service-4.png" alt="About-1" class="img-fluid" height="400px" width="400px">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h3 class="card-title">UI/UX Design</h3>
+                                    <p class="card-text">Craft exceptional user experiences with intuitive interfaces, seamless navigation, and visually appealing designs that enhance usability and engagement. Our UI/UX experts combine user research, wireframing, prototyping, and usability testing to create designs that prioritize user needs and deliver optimal digital experiences.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-5">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="image folder/service-5.png" alt="About-1" class="img-fluid" height="400px" width="400px">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h3 class="card-title">E-commerce Solutions</h3>
+                                    <p class="card-text">Launch and manage successful online stores with robust e-commerce solutions that integrate secure payment gateways, inventory management, and customer support features. We tailor e-commerce platforms to your business goals, enabling seamless transactions, personalized shopping experiences, and improved conversion rates.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-5">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="image folder/service-6.png" alt="About-1" class="img-fluid" height="400px" width="400px">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h3 class="card-title">Digital Marketing</h3>
+                                    <p class="card-text">Drive growth and achieve your business goals with strategic digital marketing campaigns that encompass SEO, PPC advertising, social media marketing, email marketing, and more. Our data-driven approach, combined with continuous optimization and analytics, ensures maximum ROI and long-term success for your digital initiatives.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            
+            <h3 class="py-5">Additional Services</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service-item">
+                        <h3>Brand Identity & Strategy</h3>
+                        <p>Define and amplify your brand's unique identity with cohesive branding elements, brand guidelines, and strategic brand positioning strategies that resonate with your target audience. We develop comprehensive brand strategies that encompass visual identity, messaging, tone of voice, and customer touchpoints to create lasting impressions and build brand loyalty.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item">
+                        <h3>Content Creation & Strategy</h3>
+                        <p>Create compelling and relevant content that attracts, engages, and converts your audience, supported by data-driven content strategies and content marketing campaigns. Our content experts specialize in creating impactful content across various formats, including articles, blogs, videos, infographics, and social media posts, to drive meaningful interactions and drive business growth.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item">
+                        <h3>SEO & SEM Services</h3>
+                        <p>Improve your online visibility and reach the right audience with tailored SEO and SEM strategies, including keyword research, on-page optimization, link building, and PPC campaigns. We optimize your digital assets to rank higher in search engine results, increase organic traffic, and generate qualified leads through targeted advertising campaigns.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item">
+                        <h3>Social Media Management</h3>
+                        <p>Build and maintain a strong social media presence with content creation, community management, influencer collaborations, and targeted advertising across major social platforms. Our social media experts develop customized strategies to enhance brand awareness, engage followers, drive conversions, and foster meaningful connections with your audience.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item">
+                        <h3>Analytics & Reporting</h3>
+                        <p>Gain actionable insights into your digital performance with advanced analytics, data tracking, and custom reporting, enabling informed decision-making and continuous optimization. We provide comprehensive analytics solutions that measure key performance indicators, track user behavior, and identify growth opportunities to drive measurable results and ROI for your digital initiatives.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item">
+                        <h3>AI & Machine Learning Solutions</h3>
+                        <p>Harness the power of artificial intelligence and machine learning technologies to automate processes, personalize user experiences, and unlock new possibilities for your business. Our AI solutions include chatbots, predictive analytics, recommendation engines, and predictive modeling to enhance operational efficiency, drive innovation, and deliver personalized experiences for your customers.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item">
+                        <h3>Virtual Reality (VR) & Augmented Reality (AR)</h3>
+                        <p>Create immersive and interactive experiences for your audience with VR and AR applications, from virtual tours and simulations to augmented reality marketing campaigns. Our VR/AR solutions blend creativity and technology to create memorable experiences that engage users, showcase products, and drive brand engagement in innovative ways.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item">
+                        <h3>Cybersecurity & Data Privacy</h3>
+                        <p>Protect your digital assets and customer data with robust cybersecurity measures, compliance solutions, and data privacy frameworks to ensure trust and security for your users. We implement industry-leading security protocols, conduct regular audits, and provide ongoing monitoring and support to safeguard your digital ecosystem and mitigate cyber risks effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+
+    <div class="container">
+        <footer class="mt-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+      
+                <div class="col-6 col-md-2 mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="blogs.html" class="nav-link p-0 text-body-secondary">Blogs</a></li>
+                        <li class="nav-item mb-2"><a href="services.html" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="pricing.html" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="testimonials.html" class="nav-link p-0 text-body-secondary">Careers</a></li>
+                        <li class="nav-item mb-2"><a href="team.html" class="nav-link p-0 text-body-secondary">Legal</a></li>
+                        <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Connect</a></li>
+                    </ul>
+                </div>
+      
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address" fdprocessedid="pz7rvp">
+                            <button class="btn btn-primary" type="button" fdprocessedid="v3uc0a">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+      
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2024 Company, Inc. All rights reserved.<a style="text-decoration: none; margin-left: 60px;" href="#">Privacy</a> · <a style="text-decoration: none;" href="#">Terms</a></p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><img src="image folder/twitter.jpeg" alt="twitterLogo" height="43" width="43"></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><img src="image folder/facebook.jpg" alt="facebookLogo" height="33" width="33" style="margin-top: 5px; margin-right: 3px;"></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><img src="image folder/insta.png" alt="InstagramLogo" height="30" width="30" style="margin-top: 7px;"></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><img src="image folder/linkedin.png" alt="LinkedinLogo" height="50" width="50" style="position: relative; bottom: 3px;"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

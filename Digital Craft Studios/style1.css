@@ -1,0 +1,27 @@
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.text-bg-dark,
+.text-bg-primary,
+.bg-body-tertiary {
+    flex-basis: 50%;
+    padding: 15px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .text-bg-dark,
+    .bg-body-tertiary {
+        flex-basis: 50%;
+        padding: 30px;
+        text-align: center;
+    }
+}
+
+.hello{
+    background-image: url("image folder/gallery-20.jpg");
+    background-size: cover;
+    background-position: center;
+}
