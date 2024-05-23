@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>weatherly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <meta name="title" content="weatherly">
+    <meta name="description" content="weatherly is a weather app made by Kunal Talreja">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="location-div">
+            <form class="location-input">
+                <input type="text" name="location" id="location" class="location" placeholder="Enter a city">
+                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="current-btn">
+                <button class="current-loc-btn"></button>
+                <p>Current Location</p>
+            </div>
+        </div>
+        <div class="current-info">
+            <div class="date-container">
+                <div class="time" id="time">
+                    <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                </div>
+
+                <div class="others" id="current-weather-items">
+                </div>
+            </div>
+
+            <div class="place-container">
+                <div class="time-zone" id="time-zone"></div>
+                <div class="country" id="country">IN</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+        </div>
+        <div class="weather-forecast" id="weather-forecast">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
