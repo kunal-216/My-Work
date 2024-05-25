@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.heading{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.container h1 span{
+    color: #ff2963;
+}
+
+#textarea{
+    width: 600px;
+    height: 250px;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #403d84;
+    color: #fff;
+    font-size: 17px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+#textarea::placeholder{
+    color: #ddd;
+}
+
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn{
+    background:#ff2963;
+    color: white;
+    font-size: 17px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn img{
+    width: 28px;
+    margin-left: -10px;
+    margin-right: 7px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+select{
+    flex: 1;  /* uses the entire space of the row*/
+    color: white;
+    background: #403d84;
+    height: 50px;
+    padding: 0px 20px ;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    appearance: none; /*Removes the dropdown symbol from the select*/
+    background-image: url("img/dropdown.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position-x: calc(100% - 10px);
+    background-position-y: 7px;
+}
